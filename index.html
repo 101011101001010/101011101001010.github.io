@@ -29,7 +29,6 @@
   <title>web</title>
   <link rel="manifest" href="manifest.json">
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCv9XukdNbQAGyLQ9tVHwJwnFjoT-c8okc"></script>
-  <meta name="google-signin-client_id" content="969694859138-82n6mp1gpj1hguml6tfkvsf93gkbo1r6.apps.googleusercontent.com">
 </head>
 <body>
   <!-- This script installs service_worker.js to provide PWA functionality to
@@ -38,30 +37,10 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=689272200');
+        navigator.serviceWorker.register('flutter_service_worker.js?v=1304070136');
       });
     }
   </script>
-
-  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
-
-  <script>
-      var firebaseConfig = {
-          apiKey: "AIzaSyCaIkjdB-Vyg35pKpE0a39hiEHvZUCtCak",
-          authDomain: "ntu-fyp-49c8c.firebaseapp.com",
-          databaseURL: "https://ntu-fyp-49c8c.firebaseio.com",
-          projectId: "ntu-fyp-49c8c",
-          storageBucket: "ntu-fyp-49c8c.appspot.com",
-          messagingSenderId: "969694859138",
-          appId: "1:969694859138:web:636aa7b8ebb05665cc899b",
-          measurementId: "G-R8MM9N3T0Y"
-      };
-
-
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-    </script>
 
   <script src="main.dart.js" type="application/javascript"></script>
 </body>
